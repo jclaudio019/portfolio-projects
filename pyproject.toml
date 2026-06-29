@@ -25,6 +25,8 @@ dependencies = [
   "typer",
   "rich",
   "loguru",
+  "seaborn>=0.13.2",
+  "fastparquet>=2026.5.0",
 ]
 
 [project.optional-dependencies]
@@ -40,20 +42,18 @@ dev = [
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
 addopts = "-q"
 
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+extend-exclude = [
+  "*.ipynb",
+  "data/m5",
+  "tmp_*.py",
+]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

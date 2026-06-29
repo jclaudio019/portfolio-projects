@@ -29,7 +29,7 @@ Its purpose is to explore how retail demand forecasting can support better reple
 - allocation priority logic
 - inventory simulation
 
-The current implementation is still expanding. At this stage, the repository includes the initial Python project scaffold, core package structure, notebooks, and supporting setup needed to grow the project in a disciplined way.
+The current implementation is still expanding. At this stage, the repository includes the initial Python environment, reusable notebook helpers, notebooks, and supporting setup needed to grow the project in a disciplined way.
 
 ## Going Forward
 
