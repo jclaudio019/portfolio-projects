@@ -1,0 +1,66 @@
+[project]
+name = "retail-replenishment-allocation-engine"
+description = "Retail replenishment and allocation analytics portfolio project scaffold"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "statsmodels",
+  "statsforecast",
+  "mlforecast",
+  "datasetsforecast",
+  "lightgbm",
+  "polars",
+  "pyarrow",
+  "duckdb",
+  "matplotlib",
+  "plotly",
+  "jupyter",
+  "ipykernel",
+  "pydantic",
+  "typer",
+  "rich",
+  "loguru",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "mypy",
+  "pre-commit",
+  "nbstripout",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E203"]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.1.0",
+    "pandas-stubs>=3.0.3.260530",
+]
