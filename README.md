@@ -1,38 +1,36 @@
-# Retail Replenishment & Allocation Engine
+# Portfolio Projects
 
-This public portfolio project builds a supply-chain analytics workflow for retail inventory planning.
+This repository is a home for applied portfolio projects built around real business problems.
 
-## Business problem
+The goal is to explore different business contexts, frame the underlying decision-making challenges, and work toward practical solutions using modern analytics, data science, and AI-assisted workflows. The emphasis is not only on modeling, but also on business reasoning, structured problem solving, and building projects that can evolve over time.
 
-Retail teams need a structured way to forecast SKU-store demand, estimate risk and variability, and convert forecasts into operational replenishment decisions such as safety stock, reorder points, stockout prevention, and allocation priorities.
+## How This Repository Is Used
 
-## Planned data sources
+Each project in this repository starts from a business problem and grows through iterative analysis, experimentation, and implementation. As the repository expands, it will include multiple projects across different domains, each with its own technical approach and business framing.
 
-- Store Item Demand Forecasting Challenge
-- M5 Forecasting Walmart
-- Favorita Grocery Sales
-- Optional extension: FreshRetailNet
+This means the repository is intended to show:
 
-## Planned modeling workflow
+- business problem understanding
+- analytical reasoning
+- modern Python and data tooling
+- AI-assisted development workflows
+- practical decision-support thinking
 
-1. Demand forecasting
-2. Forecast uncertainty estimation
-3. Safety stock calculation
-4. Reorder point logic
-5. Inventory simulation
-6. Allocation priority scoring
+## Current Project
 
-## Setup
+The first project in this repository is the **Retail Replenishment & Allocation Engine**.
 
-```bash
-uv sync
-uv run python scripts/check_env.py
-uv run pytest
-uv run ruff check .
-```
+Its purpose is to explore how retail demand forecasting can support better replenishment and inventory decisions, including:
 
-If you want development dependencies (pytest, ruff, mypy, pre-commit, nbstripout) installed with the editable project environment, include them in your project sync workflow according to `pyproject.toml`.
+- demand forecasting
+- safety stock planning
+- reorder point design
+- stockout risk thinking
+- allocation priority logic
+- inventory simulation
 
-## Data and privacy notes
+The current implementation is still expanding. At this stage, the repository includes the initial Python project scaffold, core package structure, notebooks, and supporting setup needed to grow the project in a disciplined way.
 
-This portfolio project uses only public datasets and does not use private/internal company data.
+## Going Forward
+
+This repository will continue to expand as new projects are added and existing ones become more complete. Over time, it should reflect a growing collection of business-driven analytics and AI projects, each built with a balance of technical depth and practical business context.
